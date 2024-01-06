@@ -1,43 +1,74 @@
 /* main.css */
 
 /* Reset some default styles */
-body, h1, p, a {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Apply a blue and white color palette */
-  body {
-    background-color: #fff; /* White background */
-    color: #333; /* Dark text color */
-    font-family: Arial, sans-serif; /* Choose a suitable font */
-  }
-  
-  h1 {
-    color: #0077cc; /* Blue heading color */
-  }
-  
-  a {
-    color: #0077cc; /* Blue link color */
-    text-decoration: none; /* Remove underline by default */
-  }
-  
-  a:hover {
-    text-decoration: underline; /* Add underline on hover */
-  }
-  
-  /* Style for navigation bar, if applicable */
-  .navbar {
-    background-color: #0077cc; /* Blue navigation bar background */
-    padding: 10px;
-  }
-  
-  .navbar a {
-    color: #fff; /* White navigation bar link color */
-    margin-right: 10px;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline; /* Add underline on hover */
-  }
-  
+body, h1, p, a, footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a blue and white color palette and use the Roboto font */
+body {
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text color */
+  font-family: 'Roboto', sans-serif; /* Use Roboto font or fallback to sans-serif */
+}
+
+.navbar {
+  background-color: #0077cc; /* Blue navigation bar background */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #fff; /* White navigation link color */
+  text-decoration: none; /* Remove underline by default */
+  margin-right: 15px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+  color: #e0e0e0; /* Lighter color on hover */
+}
+
+/* Styles for paragraph elements */
+p {
+  margin: 15px auto; /* Center the box horizontally with 15px top and bottom margin */
+  line-height: 1.5; /* Adjust line height for better readability */
+  padding: 15px; /* Add padding to create a styled box around the content */
+  border: 1px solid #ccc; /* Add a border for better visibility */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+
+  /* Contrasting color scheme for text and background */
+  color: #333; /* Dark text color */
+  background-color: #f4f4f4; /* Light background color */
+
+  /* Set the box width to 50% */
+  width: 50%;
+  word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+}
+
+/* Style for the purpose paragraph */
+.purpose {
+  text-align: center; /* Center the text */
+  font-size: 1.2em; /* Adjust the font size */
+}
+
+/* Style for the footer */
+footer {
+  background-color: #0077cc; /* Blue footer background */
+  color: #fff; /* White text color */
+  padding: 10px;
+  text-align: center;
+
+  /* Stick to the bottom of the page */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Add space below the header */
+header {
+  margin-bottom: 20px;
+}
